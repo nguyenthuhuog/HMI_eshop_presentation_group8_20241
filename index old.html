@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Project: Group 8 (H2T)</title>
+    <style>
+        /* Reset & Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #000;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Sticky Navigation Bar */
+        #navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        #navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        header p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Sections */
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+        blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: black;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Table for Design Process */
+        .process-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .process-block {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .process-block a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .process-block a:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation Menu -->
+        <div id="navbar">
+            <a href="#aboutus">About Us</a>
+            <a href="#designprocess">Design Process</a>
+            <a href="#demo">Demo</a>
+            <a href="#team">Team</a>
+        </div>
+
+        <!-- Main Content -->
+        <header>
+            <h1>Welcome to HCI Project: Group 8 (H2T)</h1>
+            <p>Course: AC4050E – ET-E16 - 20241</p>
+            <p>Instructors: Prof. Thanh-Hai Tran, Dr. Viet-Tung Nguyen</p>
+        </header>
+
+        <!-- About Us Section -->
+        <div class="section" id="aboutus">
+            <h2>About Us</h2>
+            <h3>Members</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Interest</th>
+                        <th>Specialties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bui Hanh Trang</td>
+                        <td>20210851</td>
+                        <td>Interaction Design</td>
+                        <td>Usability Testing, User Research</td>
+                    </tr>
+                    <tr>
+                        <td>Nguyen Thi Thanh Hang</td>
+                        <td>20213570</td>
+                        <td>Web Development</td>
+                        <td>Responsive Design, HTML/CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Nguyen Thu Huong</td>
+                        <td>20210423</td>
+                        <td>Product Design</td>
+                        <td>Illustration, Prototyping</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Design Process Section -->
+        <div class="section" id="designprocess">
+            <h2>Design Process</h2>
+            <div class="process-table">
+                <div class="process-block">
+                    <h3>Need Finding</h3>
+                    <a href="assets/01. NeedFinding/HMI.pptx">Download PPTX</a>
+                    <a href="assets/01. NeedFinding/HMI_Needfinding_Group8.pdf">Download PDF</a>
+                </div>
+                <div class="process-block">
+                    <h3>Concept Video</h3>
+                    <a href="https://youtube.com/shorts/MLGMXVGPanw?feature=share" target="_blank">Watch Video</a>
+                    <a href="assets/02. ConceptVideo/HMI Concept video.pptx">Download PPTX</a>
+                    <a href="assets/02. ConceptVideo/HMI Concept video.pdf">Download PDF</a>
+                </div>
+                <div class="process-block">
+                    <h3>Low-fi Prototype</h3>
+                    <a href="assets/03. Lo-Fi Prototype/HMI_LowFi_group8.pptx">Download PPTX</a>
+                    <a href="assets/03. Lo-Fi Prototype/HMI_LowFi_group8.pdf">Download PDF</a>
+                </div>
+                <div class="process-block">
+                    <h3>Medium Prototype</h3>
+                    <a href="https://www.figma.com/proto/qgjdve6SioOn2Foi9tZu2g/HMI_Medfi_Group8?node-id=0-1&t=gSVAV9hsdSxBeqiA-1" target="_blank">Figma Prototype</a>
+                    <a href="assets/04. Medium-Fi Prototype/HMI_MedFi.pptx">Download PPTX</a>
+                    <a href="assets/04. Medium-Fi Prototype/HMI_MedFi.pdf">Download PDF</a>
+                </div>
+                <div class="process-block">
+                    <h3>Final Report</h3>
+                    <a href="#">Download PPTX</a>
+                    <a href="#">Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Section -->
+        <!-- <div class="section" id="demo">
+            <h2>Demo</h2>
+            <p>Check out our project demo below:</p>
+            <a href="demo.html" class="btn">View Demo</a>
+        </div> -->
+
+        <!-- Team Section -->
+        <div class="section" id="team">
+            <h2>Team</h2>
+            <p>Our team is composed of talented individuals specializing in different aspects of design and development.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 HCI Project. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
